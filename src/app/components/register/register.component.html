@@ -1,0 +1,24 @@
+<div class="form-container">
+    <form (ngSubmit)="handleRegister()">
+      <h3 class="text-center title mb-2">Register</h3>
+      <p class="text-center text-secondary">Create your account</p>
+      <div>
+        <label for="Firstname">First Name</label>
+        <input type="text" id="Lname" [(ngModel)]="firstname" name="Fname" placeholder=" Your First Name" required>
+      </div>
+      <div>
+        <label for="Lastname">Last Name</label>
+        <input type="text" id="Fname" [(ngModel)]="lastname" name="Lname" placeholder=" Your Last Name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" placeholder=" Your Email" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder=" Your Password" required>
+      </div>
+      <button class="mt-4 btn btn-dark mb-4" type="submit">Register</button>
+      <a href="/login">Already have an account?</a>
+    </form>
+  </div>
